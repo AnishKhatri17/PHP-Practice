@@ -35,4 +35,36 @@
     else{
         echo "It is NOT cloudy. 🌦️";
     }
+
+    echo "<br><br>";
+    echo "<strong>----- Example 2 -----</strong><br>";
+    //Example 2:
+    $age = 101;
+    $citizen_of_Nepal = true;
+
+    if($age >=18 && $age <= 100 && $citizen_of_Nepal){
+        echo "You are a valid citizen of Nepal and Age. You can Vote.";
+    }
+   
+    else{
+        echo "Opps, you cannot vote !!!";
+    }
+
+
+    echo "<br><br>";
+    echo "<strong>----- Example 3 -----</strong><br>";
+    //Example 3:
+    $child = false;
+    $senior = true;
+    $ticket = null;
+
+    if($child || $senior){ // if either one of the condition is TRUE this will execute
+        $ticket = 10;
+        echo "The price of your ticket is: Rs.{$ticket}";
+    }
+
+    else{
+        $ticket = 15;
+        echo "The price of your ticket is: Rs.{$ticket}";
+    }
 ?>
