@@ -50,17 +50,17 @@
 
         // VALIDATION CHECK :
         echo "<strong>Validation Check: <br></strong>";
-        $username = filter_input(INPUT_POST, "username", FILTER_VALIDATE_FLOAT); // JUST ENTER A FLOAT VALUE FOR NOW. 
+        // $username = filter_input(INPUT_POST, "username", FILTER_VALIDATE_FLOAT); // JUST ENTER A FLOAT VALUE FOR NOW. 
         // PHP DOESN'T HAVE BUILT-IN FIKTER VALIDATE FOR ALPHABETIC-ONLY STRING !!!
         $age = filter_input(INPUT_POST, "age", FILTER_VALIDATE_INT);
         $email = filter_input(INPUT_POST, "email", FILTER_VALIDATE_EMAIL);
 
-        if(empty($username)){
-            echo "The username is not valid.<br>";
-        }
-        else {
-            echo "Hellloooo, {$username}.<br>";
-        }
+        // if(empty($username)){
+        //     echo "The username is not valid.<br>";
+        // }
+        // else {
+        //     echo "Hellloooo, {$username}.<br>";
+        // }
 
         if(empty($age)){
             echo "The age is not valid.<br>";
