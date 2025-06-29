@@ -51,5 +51,44 @@
             }
 
         }
-
 ?>
+
+<!-- Second Example -->
+<?php
+    echo "<br><br><br>";
+?>
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Example of a Checkbox</title>
+ </head>
+ <body>
+    <h2>Second Example of Checkboxes in PHP</h2>
+   <form action="Checkboxes.php" method="post">
+        <input type="checkbox" name="sports[]" value="Cricket">  Cricket<br>
+        <input type="checkbox" name="sports[]" value="Football">  Football<br>
+        <input type="checkbox" name="sports[]" value="Basketball">  Basketball<br>
+        <input type="checkbox" name="sports[]" value="Table Tennis">  Table Tennis<br><br>
+        <input type="submit" name="click" value="Click me"><br>
+    </form>
+ </body>
+ </html>
+
+ <?php
+    if(isset($_POST["click"])){
+        if(!empty($_POST["sports"])){
+            $sports = $_POST["sports"];
+            
+        // using foreach loop to display all the sports
+        foreach($sports as $sport){
+            echo $sport . "<br>";
+            }
+        }
+
+        else{
+            echo "No sports selected !";
+        }
+    }
+ ?>
