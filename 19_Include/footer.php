@@ -1,3 +1,6 @@
+<?php
+    // Included a php tag because it is an php file.
+?>
 <footer>
     <hr><br><br>
     Author: Anish Khatri <br>
