@@ -4,7 +4,7 @@
     $db_server = "localhost";
     $db_user = "root";
     $db_pass = "";
-    $db_name = "laravel_todo"; // in my localhost I have this database so no issue in connection, Make sure you have the exact same name db.
+    $db_name = "php_practice"; // in my localhost I have this database so no issue in connection, Make sure you have the exact same name db.
     $conn = "";
 
     try{
